@@ -1,0 +1,28 @@
+input{
+    
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #8566aa;
+    
+    outline: none; 
+}
+
+button {
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #8566aa;
+    color: #fff;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    box-shadow :5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
