@@ -40,7 +40,7 @@ function App() {
     // console.log(e)
     setItem((prev) => {
       return prev.filter((task , index) => {
-        return index != e;
+        return index !== e;
       })
     })
   }
