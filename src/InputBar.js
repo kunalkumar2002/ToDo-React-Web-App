@@ -2,16 +2,16 @@ import './InputBar.css'
 
 function InputBar(props){
 
-    const {  handleInputKeyBord} = props;
+    const { state, handleInputKeyBord , handleClick} = props;
 
     return (
         <div className="screen">
             <input
-                // value={""}
+                value={state}
                 onKeyDown={handleInputKeyBord}
                 onChange={handleInputKeyBord}
             />
-            <button> + </button>
+            <button onClick={handleClick} id={'+'}> + </button>
         </div>
     )
 }
