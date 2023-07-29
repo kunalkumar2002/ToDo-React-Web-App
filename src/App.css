@@ -10,9 +10,14 @@
 
 }
 .container{
-  width: 40%;
+  width: 30%;
   height: 80vh;
-  background-color: #f4f4f4;
+  background-color: #222242;
   box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
+  overflow: auto;
+}
+
+h1{
+  color: white;
 }

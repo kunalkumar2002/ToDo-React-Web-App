@@ -8,7 +8,7 @@ input{
     font-size: 20px;
     font-weight: 500;
     width: 60%;
-    border-bottom: 2px solid #8566aa;
+    border-bottom: 2px solid white;
     
     outline: none; 
 }
@@ -25,4 +25,10 @@ button {
     outline: none;
     margin-left: 10px;
     box-shadow :5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
 }

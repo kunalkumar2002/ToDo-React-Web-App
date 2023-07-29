@@ -1,5 +1,6 @@
 ol{
     margin-top: 20px;
+    margin-right: 20px;
 }
 ol li {
     padding-left: 0px;
@@ -10,7 +11,40 @@ ol li {
     min-height: 40px;
     display: flex;
     align-items: center;
-    color: #8566aa;
+    color: white;
     text-transform: capitalize;
     /* border-bottom: 1px solid grey; */
+}
+
+.list-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+
+.list-style:hover{
+    border-color: #f68400;
+    color: #f68400;
+    box-shadow: 5px 5px 25px 5px #f68400;
+}
+
+/* Styles for the list item */
+/* .list {
+    flex: 1;
+    margin-right: 8px;
+}  */
+
+/* Styles for the trash icon */
+.faTrashCan {
+    color:  white; /* You can change the color to your desired color */
+    cursor: pointer;
+}
+
+.faTrashCan:hover {
+    color:  red; /* You can change the color to your desired color */
+    
 }
