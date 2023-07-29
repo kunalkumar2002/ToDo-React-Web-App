@@ -36,6 +36,15 @@ function App() {
 
   }
 
+  function handleDelete(e){
+    // console.log(e)
+    setItem((prev) => {
+      return prev.filter((task , index) => {
+        return index != e;
+      })
+    })
+  }
+
   return (
     <div className="App">
       <div className='container'>
@@ -46,7 +55,10 @@ function App() {
           handleInputKeyBord = {handleInputKeyBord}
           handleClick = {handleClick }
         />
-        <TodoList  state={item}/>
+        <TodoList  
+          state={item}
+          handleDelete={handleDelete}
+        />
         
       </div>
     </div>

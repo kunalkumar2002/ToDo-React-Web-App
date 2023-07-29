@@ -4,32 +4,29 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 function TodoList(props){
 
-    const {state} = props;
+    const {state , handleDelete} = props;
     // console.log(state)
 
-    return (
-        
+    // const handleDelete = (index) => {
+    //     console.log(index)
+    //   };
+    
+      return (
         <ol>
-            
-            {
-                state.map((item , index) =>{
-                    return (
-
-                        <div className='list-style'>
-                           
-                            <li className="list" key={index}>
-                                {`${item}`}
-                            </li>
-
-                            <FontAwesomeIcon icon={faTrashCan} className="faTrashCan"/>
-
-                        </div>
-                    )
-                    
-                })
-            }
+          {state.map((item, index) => {
+            return (
+              <div className='list-style' key={index}>
+                <li>{`${item}`}</li>
+                <FontAwesomeIcon
+                  icon={faTrashCan}
+                  className="faTrashCan"
+                  onClick={() => handleDelete(index)} // Pass the index to handleDelete function
+                />
+              </div>
+            );
+          })}
         </ol>
-    )
+      );
 }
 
 export default TodoList;
