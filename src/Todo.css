@@ -1,3 +1,16 @@
 ol{
-    margin-top: 50px;
+    margin-top: 20px;
+}
+ol li {
+    padding-left: 0px;
+    /* padding: 3px 0; */
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #8566aa;
+    text-transform: capitalize;
+    /* border-bottom: 1px solid grey; */
 }

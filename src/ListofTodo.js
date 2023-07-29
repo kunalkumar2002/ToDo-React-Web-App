@@ -7,19 +7,23 @@ function TodoList(props){
 
     return (
         
-        <ul>
+        <ol>
             
             {
                 state.map((item , index) =>{
                     return (
-                        <li className="list" key={index}>
-                            {`${item}`}
-                        </li>
+
+                        <div className='list-style'>
+                            <img src="icons8-trash-can-50.png" alt='delete'  />
+                            <li className="list" key={index}>
+                                {`${item}`}
+                            </li>
+                        </div>
                     )
                     
                 })
             }
-        </ul>
+        </ol>
     )
 }
 
