@@ -16,7 +16,7 @@ function TodoList(props){
           {state.map((item, index) => {
             return (
               <div className='list-style' key={index}>
-                <li>{`${item}`}</li>
+                <li>{`${item.title}`}</li>
                 <FontAwesomeIcon
                   icon={faTrashCan}
                   className="faTrashCan"
