@@ -61,11 +61,12 @@ function App() {
       return;
     }
     
-    console.log('update')
+    console.log(editTaskId)
 
     const updatedTask = {
       title: state,
-      completed: false
+      completed: false,
+      id:editTaskId,
     };
 
     try {
@@ -84,10 +85,10 @@ function App() {
       );
       setState('');
       setEditTaskId(null);
-      // toast.success('Task updated successfully');
+      
     } catch (error) {
       console.log('Error updating task:', error);
-      // toast.error('Error updating task');
+      
     }
   }
 
