@@ -14,6 +14,7 @@ input{
 }
 
 button {
+    text-align: center;
     min-height: 40px;
     min-width: 40px;
     border-radius: 50%;
@@ -31,4 +32,11 @@ button {
 button:hover{
     background-color: white;
     color: black;
+}
+.faPen{
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vh;
 }

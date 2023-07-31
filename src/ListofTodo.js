@@ -1,10 +1,10 @@
 import './Todo.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCan , faPenToSquare } from '@fortawesome/free-solid-svg-icons'
 
 function TodoList(props){
 
-    const {state , handleDelete} = props;
+    const {state , handleDelete , handleEditTask } = props;
     // console.log(state)
 
     // const handleDelete = (index) => {
@@ -17,11 +17,20 @@ function TodoList(props){
             return (
               <div className='list-style' key={index}>
                 <li>{`${item.title}`}</li>
-                <FontAwesomeIcon
-                  icon={faTrashCan}
-                  className="faTrashCan"
-                  onClick={() => handleDelete(index)} // Pass the index to handleDelete function
-                />
+
+               <div>
+                    <FontAwesomeIcon 
+                        icon={faPenToSquare} 
+                        className="faPenToSquare"
+                        onClick={() => handleEditTask(item.id)} 
+                    />
+
+                    <FontAwesomeIcon
+                    icon={faTrashCan}
+                    className="faTrashCan"
+                    onClick={() => handleDelete(index)} // Pass the index to handleDelete function
+                    />
+                </div>
               </div>
             );
           })}
