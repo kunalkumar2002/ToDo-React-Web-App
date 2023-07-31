@@ -18,7 +18,7 @@ function App() {
 
   const fetchTodo = async () => {
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=4');
+      const response = await fetch('https://jsonplaceholder.typicode.com/todos?_limit=5');
       const task = await response.json();
       setItem(task);
       // console.log(task)
@@ -60,6 +60,8 @@ function App() {
     if (state.trim() === '') {
       return;
     }
+    
+    console.log('update')
 
     const updatedTask = {
       title: state,
@@ -119,7 +121,7 @@ function App() {
   function handleEditTask(e){
     // console.log(e)
     setEditTaskId(e);
-    const taskeToEd = item.find((task) => task.id === e)
+    const taskeToEd = item.find((task) => task.id === e )
     setState(taskeToEd.title);
     // console.log(taskeToEd.title)
   }
